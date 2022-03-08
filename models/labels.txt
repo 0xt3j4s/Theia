@@ -1,0 +1,6 @@
+0 stomach
+1 black hole
+2 cyclone
+3 earth
+4 lungs
+5 volcano
