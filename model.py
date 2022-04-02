@@ -28,38 +28,6 @@ def get_label(img):
     # run the inference
     prediction = model.predict(data)
 
-    # max = 0
-
-    # for i in range(len(prediction[0])):
-    #     if prediction[0][i] > prediction[0][max]:
-    #         max = i
-
-    # labels = open('labels.txt', 'r')
-    # l = labels.read()
-
-    # temp = list(l.split('\n'))
-
-    # for i in range(len(temp)-1):
-    #     k = list(temp[i].split(' '))
-
-    #     temp[i] = k
-
-    # temp.pop()
-
-
-    # pred = {}
-    # for i in range(len(temp)):
-    #     a = int(temp[i][0])
-    #     pred[a] = " ".join(temp[i][1:])
-
-
-
-    # model_label = {}
-
-    # model_label['label'] = [pred[max]]
-    # # print(model_label)
-    # return model_label
-
     return np.argmax(prediction)
 
 
